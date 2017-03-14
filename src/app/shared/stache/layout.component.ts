@@ -9,5 +9,5 @@ export class StacheLayoutComponent implements OnInit {
   @Input()
   public layout: string = 'sidebar';
 
-  public ngOnInit(): void {}
+  public ngOnInit(): void { }
 }
