@@ -23,8 +23,6 @@
 .row {
   display: flex;
   flex-direction: column;
-  margin-left: -$stache-padding-size;
-  margin-right: -$stache-padding-size;
 
   @media (min-width: $stache-screen-sm) {
     flex-direction: row;

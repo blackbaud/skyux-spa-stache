@@ -14,9 +14,7 @@
 <!-- OTHER LAYOUTS HERE -->
 
 <!-- OUTPUT -->
-<div class="sky-container">
-  <div class="stache-layout">
-    <template [ngTemplateOutlet]="component.ref" [ngOutletContext]="{ component: component }">
-    </template>
-  </div>
+<div class="stache-layout">
+  <template [ngTemplateOutlet]="templateRef" [ngOutletContext]="{ component: component }">
+  </template>
 </div>

@@ -15,14 +15,15 @@ export class StacheLayoutComponent implements OnInit {
   @Input()
   public routes: any[];
 
-  @ViewChild('sidebar')
-  public sidebar;
-
   public component: any = {};
+  public templateRef;
+
+  @ViewChild('sidebar')
+  private sidebar;
 
   public ngOnInit(): void {
+    this.templateRef = this.sidebar;
     this.component = {
-      ref: this.sidebar,
       routes: this.routes
     };
   }
