@@ -1,13 +1,11 @@
 import { NgModule } from '@angular/core';
-
-import { StacheLayoutComponent, StacheNavHeadingComponent } from './shared/stache';
+import { StacheModule } from '../stache/stache.module';
 
 // Specify entry components, module-level providers, etc. here.
 @NgModule({
+  imports: [StacheModule],
+  exports: [StacheModule],
   providers: [],
-  entryComponents: [
-    StacheNavHeadingComponent,
-    StacheLayoutComponent
-  ]
+  entryComponents: []
 })
 export class AppExtrasModule { }

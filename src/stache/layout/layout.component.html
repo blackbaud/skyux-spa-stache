@@ -1,13 +1,19 @@
+
+<!-- SIDEBAR LAYOUT -->
 <template #sidebar let-context="component">
   <div class="row">
     <div class="col-sm-3">
-      <stache-nav [routes]="context.routes"></stache-nav>
+      <stache-menu [routes]="context.routes"></stache-menu>
     </div>
     <div class="col-sm-9">
       <ng-content></ng-content>
     </div>
   </div>
 </template>
+
+<!-- OTHER LAYOUTS HERE -->
+
+<!-- OUTPUT -->
 <div class="sky-container">
   <div class="stache-layout">
     <template [ngTemplateOutlet]="component.ref" [ngOutletContext]="{ component: component }">

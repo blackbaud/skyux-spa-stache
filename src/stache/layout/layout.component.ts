@@ -1,4 +1,7 @@
-import { Component, OnInit, Input, ViewChild } from '@angular/core';
+import { Component,
+         OnInit,
+         Input,
+         ViewChild } from '@angular/core';
 
 @Component({
   selector: 'stache-layout',
@@ -9,6 +12,9 @@ export class StacheLayoutComponent implements OnInit {
   @Input()
   public layout: string = 'sidebar';
 
+  @Input()
+  public routes: any[];
+
   @ViewChild('sidebar')
   public sidebar;
 
@@ -17,17 +23,7 @@ export class StacheLayoutComponent implements OnInit {
   public ngOnInit(): void {
     this.component = {
       ref: this.sidebar,
-      title: 'About Us',
-      routes: [
-        {
-          label: 'Getting started',
-          routerLink: ['/home']
-        },
-        {
-          label: 'Code samples',
-          routerLink: ['/home']
-        }
-      ]
+      routes: this.routes
     };
   }
 }
