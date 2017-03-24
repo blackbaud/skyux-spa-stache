@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
-import { StacheModule } from '@blackbaud/stache';
 
-require('style!@blackbaud/stache/src/styles/stache.scss');
+import { StacheModule } from '@blackbaud/stache';
 
 // Specify entry components, module-level providers, etc. here.
 @NgModule({
-  imports: [StacheModule],
-  exports: [StacheModule],
+  imports: [
+    StacheModule
+  ],
+  exports: [
+    StacheModule
+  ],
   providers: [],
   entryComponents: []
 })
