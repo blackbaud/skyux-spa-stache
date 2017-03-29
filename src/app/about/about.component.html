@@ -2,27 +2,12 @@
   pageTitle="About" 
   layout="sidebar">
 
-  <stache-page-anchor>
-    Menu component
-  </stache-page-anchor>
-
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus molestie aliquam. Vestibulum scelerisque auctor efficitur. Etiam pulvinar rutrum magna at rutrum.
-  </p>
-
-  <stache-page-anchor>
-    Getting started
-  </stache-page-anchor>
-
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus molestie aliquam. Vestibulum scelerisque auctor efficitur. Etiam pulvinar rutrum magna at rutrum.
-  </p>
-
-  <stache-page-anchor>
-    Installation instructions
-  </stache-page-anchor>
-
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus molestie aliquam. Vestibulum scelerisque auctor efficitur. Etiam pulvinar rutrum magna at rutrum.
-  </p>
+  <div class="about-section-component" *ngFor="let section of aboutSections">
+    <stache-page-anchor>
+      {{section.sectionTitle}}
+    </stache-page-anchor>
+    <p class="sections-description">
+      {{section.sectionDescription}}
+    </p>
+  </div>
 </stache>
