@@ -12,26 +12,27 @@ describe('About component', () => {
     });
   });
 
-  it('should display a new teammate when one is added', () => {
-    const name = 'Blackbaud';
-    const email = 'no-reply@blackbaud.com';
+  it('should display a new section when one is added', () => {
+    const title = 'Blackbaud';
+    const description = 'Description Info';
     const fixture = TestBed.createComponent(AboutComponent);
 
-    fixture.componentInstance.team.push({
-      name: 'Blackbaud',
-      email: 'no-reply@blackbaud.com'
+    fixture.componentInstance.aboutSections.push({
+      sectionTitle: 'Blackbaud',
+      sectionDescription: 'Description Info'
     });
 
     fixture.detectChanges();
 
     const el = fixture.nativeElement;
-    const lastTeamEl = el.querySelector('.template-about-teams .template-about-team:last-child');
-    const namesEl = lastTeamEl.querySelector('sky-key-info-value');
-    const emailsEl = lastTeamEl.querySelector('sky-key-info-label');
+    const sections = el.querySelectorAll('.about-section-component');
+    const lastSection = sections[sections.length - 1];
+    const titleEl = lastSection.querySelector('.stache-page-anchor-heading');
+    const descriptionEl = lastSection.querySelector('.sections-description');
 
     // Using custom expect matchers
-    expect(namesEl).toHaveText(name);
-    expect(emailsEl).toHaveText(email);
+    expect(titleEl).toHaveText(title);
+    expect(descriptionEl).toHaveText(description);
   });
 
 });
