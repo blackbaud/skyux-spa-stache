@@ -1,20 +1,17 @@
 <app-nav></app-nav>
-<stache>
-  <h1>
-    SKY UX Template
-  </h1>
+<stache-hero
+  overlayOpacity="0.4"
+  backgroundImageUrl="~/assets/hero-sample-1.jpg">
+  <stache-hero-heading>
+    Stache
+  </stache-hero-heading>
+  <stache-hero-subheading>
+    Documentation components designed for SKY UX applications
+  </stache-hero-subheading>
+</stache-hero>
 
+<stache showBreadcrumbs="false" pageTitle="Welcome">
   <p>
-    Welcome to the SKY UX template.  This template is dynamically cloned anytime `skyux new` is run.  For more information about SKY UX, visit the README.
+    Welcome to the SKY UX Stache template.  This template is dynamically cloned anytime <stache-code>skyux new --template stache</stache-code> is run.  For more information about SKY UX, visit the README.
   </p>
-
-  <sky-alert alertType="info">
-    You've just taken your first step into a larger world.
-  </sky-alert>
-
-  <p>
-    <a href="https://github.com/blackbaud/skyux-cli" target="_blank" rel="noopener noreferrer">
-      Learn more about SKY UX
-    </a>
-  <p>
 </stache>
