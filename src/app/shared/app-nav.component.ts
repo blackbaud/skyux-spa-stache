@@ -15,7 +15,15 @@ export class AppNavComponent {
       name: 'Learn',
       path: '/learn'
     },
-        {
+    {
+      name: 'API',
+      path: '/api'
+    },
+    {
+      name: 'Support',
+      path: '/support'
+    },
+    {
       name: 'Contribute',
       path: '/contribute'
     }
