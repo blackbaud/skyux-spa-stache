@@ -12,8 +12,20 @@ export class AppNavComponent {
       path: '/'
     },
     {
-      name: 'About',
-      path: '/about'
+      name: 'Learn',
+      path: '/learn'
+    },
+    {
+      name: 'API',
+      path: '/api'
+    },
+    {
+      name: 'Support',
+      path: '/support'
+    },
+    {
+      name: 'Contribute',
+      path: '/contribute'
     }
   ];
 }
