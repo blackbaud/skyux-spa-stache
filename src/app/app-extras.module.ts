@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 
 import { StacheModule } from '@blackbaud/stache';
 
+import { stacheConfigProvider } from './lib/stache-config';
+
 // Specify entry components, module-level providers, etc. here.
 @NgModule({
   imports: [
@@ -10,7 +12,9 @@ import { StacheModule } from '@blackbaud/stache';
   exports: [
     StacheModule
   ],
-  providers: [],
+  providers: [
+    stacheConfigProvider
+  ],
   entryComponents: []
 })
 export class AppExtrasModule { }
