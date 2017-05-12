@@ -17,6 +17,7 @@ import { StacheModule, StacheConfigService } from '@blackbaud/stache';
       provide: StacheConfigService,
       useExisting: SkyAppConfig
     }
-  ]
+  ],
+  entryComponents: []
 })
 export class AppExtrasModule { }
