@@ -4,7 +4,7 @@
   "compileMode": "aot",
   "plugins": [
     "@blackbaud/skyux-builder-plugin-stache-code-block",
-    "@blackbaud/skyux-builder-plugin-stache-includes"
+    "@blackbaud/skyux-builder-plugin-stache-include"
   ],
   "app": {
     "title": "Stache 2 Template"
