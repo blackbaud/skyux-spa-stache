@@ -1,5 +1,9 @@
-<app-nav></app-nav>
-<stache pageTitle="Tutorial Two">
+<app-nav>
+</app-nav>
+
+<stache
+  pageTitle="Tutorial Two">
+
   <stache-page-summary>
     <p>
       Tutorial Second Steps
@@ -9,13 +13,14 @@
   <stache-page-anchor>
     Section One
   </stache-page-anchor>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis facilis veritatis dicta adipisci, hic, explicabo dignissimos ducimus eligendi, modi odio commodi fugit iusto optio totam corrupti expedita sequi atque assumenda.
-    </p>
-    <stache-code-block languageType="js">
-      $(document).ready(() => {
-        console.log('jQuery is ready!');
-      });
-      <p>Hey! {{name}}</p>
-    </stache-code-block>
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis facilis veritatis dicta adipisci, hic, explicabo dignissimos ducimus eligendi, modi odio commodi fugit iusto optio totam corrupti expedita sequi atque assumenda.
+  </p>
+
+  <stache-code-block languageType="js">
+    $(document).ready(() => {
+      console.log('jQuery is ready!');
+    });
+  </stache-code-block>
 </stache>
