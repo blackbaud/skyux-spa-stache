@@ -8,5 +8,9 @@
   ],
   "app": {
     "title": "Stache 2 Template"
+  },
+  "appSettings": {
+    "stache": {
+    }
   }
 }
