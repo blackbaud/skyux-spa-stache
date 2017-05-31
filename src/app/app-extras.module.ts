@@ -41,7 +41,7 @@ export class AppExtrasModule { }
     ];
     let parsedToken = decode(token);
     let domain = parsedToken.email.split('@')[1];
-    console.log('token: ', parsedToken);
+    
     if (emailDomainWhitelist.includes(domain)) {
       return Promise.resolve(true);
     }
