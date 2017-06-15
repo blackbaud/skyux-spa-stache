@@ -2,6 +2,7 @@
   "name": "stache2template",
   "mode": "easy",
   "compileMode": "aot",
+  "auth": true,
   "plugins": [
     "@blackbaud/skyux-builder-plugin-stache",
     "@blackbaud/skyux-builder-plugin-auth-email-whitelist"
