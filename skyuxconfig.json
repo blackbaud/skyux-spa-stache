@@ -1,9 +1,10 @@
 {
   "mode": "easy",
   "compileMode": "aot",
+  "auth": true,
   "plugins": [
-    "@blackbaud/skyux-builder-plugin-stache-code-block",
-    "@blackbaud/skyux-builder-plugin-stache-include"
+    "@blackbaud/skyux-builder-plugin-stache",
+    "@blackbaud/skyux-builder-plugin-auth-email-whitelist"
   ],
   "app": {
     "title": "Stache 2 Template"

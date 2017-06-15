@@ -14,11 +14,12 @@
   "author": "Blackbaud",
   "license": "MIT",
   "dependencies": {
-    "@blackbaud/skyux": "2.0.0-beta.29",
-    "@blackbaud/stache": "2.0.0-beta.1"
+    "@blackbaud/skyux": "2.0.0-beta.31",
+    "@blackbaud/stache": "2.0.0-beta.3",
+    "@blackbaud/skyux-builder-plugin-auth-email-whitelist": "1.0.4"
   },
   "devDependencies": {
-    "@blackbaud/skyux-builder": "1.0.0-beta.28",
+    "@blackbaud/skyux-builder": "1.0.0-beta.33",
     "codelyzer": "2.0.0-beta.1"
   },
   "repository": {

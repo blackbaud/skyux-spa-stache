@@ -14,9 +14,14 @@
   layout="container"
   showBreadcrumbs="false"
   pageTitle="Welcome">
+
   <p>
     Welcome to the SKY UX Stache 2 template.  This template is dynamically cloned anytime <stache-code>skyux new --template stache</stache-code> is run.
   </p>
+
+  <h1>
+    Welcome to {{ stache.jsonData.global.productNameLong }}!
+  </h1>
 
   <stache-row>
     <stache-column screenSmall="12" screenMedium="4" screenLarge="4">

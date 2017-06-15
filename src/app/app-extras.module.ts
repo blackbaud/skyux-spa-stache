@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 
-import { SkyAppConfig } from '@blackbaud/skyux-builder/runtime';
-
-import { StacheModule, StacheConfigService } from '@blackbaud/stache';
+import { StacheModule } from '@blackbaud/stache';
 
 // Specify entry components, module-level providers, etc. here.
 @NgModule({
@@ -12,12 +10,7 @@ import { StacheModule, StacheConfigService } from '@blackbaud/stache';
   exports: [
     StacheModule
   ],
-  providers: [
-    {
-      provide: StacheConfigService,
-      useExisting: SkyAppConfig
-    }
-  ],
+  providers: [],
   entryComponents: []
 })
 export class AppExtrasModule { }
