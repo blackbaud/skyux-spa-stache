@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@blackbaud/stache": "2.0.0-beta.3",
-    "@blackbaud/skyux-builder-plugin-auth-email-whitelist": "1.0.4"
+    "@blackbaud/skyux-builder-plugin-auth-email-whitelist": "1.0.5"
   },
   "devDependencies": {
     "@blackbaud/skyux": "2.0.0-rc.0",
