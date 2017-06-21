@@ -11,9 +11,11 @@ describe('Home Component', () => {
 
     // Host URL + SPA Name automatically included
     SkyHostBrowser.get('/');
-    expect(element(by.tagName('h1')).getText()).toBe('Stache 2');
 
-    // // Since we've said this is an async test, we need to call done
-    done();
+    element(by.tagName('h1')).getText()
+      .then((text: string) => {
+        expect(text).toBe('Stache 2');
+        done();
+      });
   });
 });
