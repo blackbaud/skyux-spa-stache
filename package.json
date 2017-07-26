@@ -14,7 +14,7 @@
   "author": "Blackbaud",
   "license": "MIT",
   "dependencies": {
-    "@blackbaud/stache": "2.0.0-rc.0",
+    "@blackbaud/stache": "2.0.0-rc.1",
     "@blackbaud/skyux-builder-plugin-auth-email-whitelist": "1.0.5"
   },
   "devDependencies": {
