@@ -24,3 +24,6 @@ dist
 
 # OS specific files
 .DS_Store
+
+# Search e2e file
+e2e/stache-search.e2e-spec.ts
