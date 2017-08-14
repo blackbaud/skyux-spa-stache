@@ -8,6 +8,7 @@
   },
   "scripts": {
     "skyux": "skyux",
+    "postinstall": "node node_modules/stache-search/index.js",
     "test": "skyux lint && skyux test && skyux e2e && skyux build"
   },
   "keywords": [],
@@ -16,7 +17,8 @@
   "dependencies": {
     "@blackbaud/skyux": "2.0.0-rc.9",
     "@blackbaud/skyux-builder-plugin-auth-email-whitelist": "~1.0.0",
-    "@blackbaud/stache": "2.0.0-rc.1"
+    "@blackbaud/stache": "2.0.0-rc.1",
+    "search": "git@github.com:blackbaud/stache-search.git"
   },
   "devDependencies": {
     "@blackbaud/skyux-builder": "1.0.0-rc.12"
