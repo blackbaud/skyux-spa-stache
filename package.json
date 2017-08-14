@@ -8,7 +8,7 @@
   },
   "scripts": {
     "skyux": "skyux",
-    "postinstall": "node node_modules/stache-search/src/search.js",
+    "postinstall": "node node_modules/stache-search/index.js",
     "test": "skyux lint && skyux test && skyux e2e && skyux build"
   },
   "keywords": [],
