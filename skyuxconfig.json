@@ -1,16 +1,18 @@
 {
   "mode": "easy",
   "compileMode": "aot",
-  "auth": true,
+  "auth": false,
   "plugins": [
     "@blackbaud/skyux-builder-plugin-stache",
-    "@blackbaud/skyux-builder-plugin-auth-email-whitelist"
   ],
   "app": {
     "title": "Stache 2 Template"
   },
   "appSettings": {
     "stache": {
+      "editButton": {
+        "url": "https://github.com/{your-repo-url}"
+      }
     }
   }
 }
