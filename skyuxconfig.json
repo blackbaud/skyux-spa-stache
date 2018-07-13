@@ -11,7 +11,7 @@
   "appSettings": {
     "stache": {
       "editButton": {
-        "url": "{your-repo-url}"
+        "url": "your-repo-url"
       }
     }
   }
