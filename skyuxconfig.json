@@ -10,6 +10,9 @@
   },
   "appSettings": {
     "stache": {
+      "searchConfig": {
+        "allowSiteToBeSearched": false
+      },
       "editButton": {
         "url": "your-repo-url"
       }
