@@ -1,25 +1,44 @@
 <app-nav>
 </app-nav>
+  <stache
+    pageTitle="Tutorial One">
 
-<stache
-  pageTitle="Tutorial One">
+    <stache-tutorial>
+        <stache-tutorial-heading>
+          Tutorial One
+        </stache-tutorial-heading>
+        <stache-tutorial-summary>
+          Summary information about this demo tutorial.
+        </stache-tutorial-summary>
 
-  <stache-page-summary>
-    <p>
-      Tutorial First Steps
-    </p>
-  </stache-page-summary>
+        <stache-tutorial-step>
+          <stache-tutorial-step-heading>
+            This is our first demo step.
+          </stache-tutorial-step-heading>
+          <stache-tutorial-step-body>
+            <p>This is tutorial information about this first step.</p>
+            <sky-alert alertType="info">
+              You can include other components and columns inside of these steps.
+            </sky-alert>
+            <stache-code-block
+              languageType="markup">
+              <blink>Awesome Things Happen Here!</blink>
+              <a href="https://sc.blackbaud.com/">Service Catalog</a>
+            </stache-code-block>
+          </stache-tutorial-step-body>
+        </stache-tutorial-step>
 
-  <stache-page-anchor>
-    Section One
-  </stache-page-anchor>
+        <sky-alert alertType="info">
+          You can include other components and columns outside of these steps too.
+        </sky-alert>
 
-  <stache-include fileName="lorem.html">
-  </stache-include>
-
-  <stache-code-block
-    languageType="markup">
-    <blink>Awesome Things Happen Here!</blink>
-    <a href="https://sc.blackbaud.com/">Service Catalog</a>
-  </stache-code-block>
-</stache>
+        <stache-tutorial-step showNumber="false">
+          <stache-tutorial-step-heading>
+            Additional tutrial information.
+          </stache-tutorial-step-heading>
+          <stache-tutorial-step-body>
+            For additional documentation on the tutorial component, see the <a href="https://docs.blackbaud.com/stache/content/tutorial">Stache tutorial docs</a>.
+          </stache-tutorial-step-body>
+        </stache-tutorial-step>
+      </stache-tutorial>
+  </stache>
