@@ -2,5 +2,9 @@
   "example_string": {
     "message": "This is an example string",
     "_description": "The _description property gives context to the translator as to how the string is used in the product"
+  },
+  "localization_explanation": {
+    "message": "SKY UX Builder provides the capability to declare localization strings in a JSON file and then reference those strings throughout your SPA using the skyAppResources pipe or the SkyAppResourcesService service in @blackbaud/skyux-builder/runtime/i18n. For full reference see the SKY UX docs",
+    "_description": "Information on localizing text within the a Stache SPA."
   }
 }
