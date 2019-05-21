@@ -10,11 +10,14 @@
   </stache-hero-subheading>
 </stache-hero>
 
+
 <stache
   layout="container"
   showBreadcrumbs="false"
   pageTitle="Welcome">
-
+  <stache-include
+    fileName="deprecation-warning.html">
+  </stache-include>
   <p>
     Welcome to the SKY UX Stache template.  This template is dynamically cloned anytime <stache-code>skyux new --template stache</stache-code> is run.
   </p>
